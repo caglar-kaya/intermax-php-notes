@@ -4,22 +4,17 @@
 
 </head>
 <body>
-<h1>Test</h1>
-<ul>
-<?php
-
-
-$listOfNumbers = ['bir', 'ikki','uz','dort','bez'];
-
-// https://spatie.be/docs/ray/v1/usage/framework-agnostic-php
-ray()->clearScreen();
-ray($listOfNumbers);
-
-foreach($listOfNumbers as $number){
-    echo '<li>'.$number.'</li>';
-}
-
-?>
-</ul>
+<header>
+    <h1>My First PHP Site</h1>
+</header>
+<main>
+    <p>This HTML will get delivered as is</p>
+    <?php echo "Hello world!";?>
+    <?php echo "<p>But this code is interpreted by PHP and turned into HTML</p>";?>
+    <?php echo "<ul><li>You can use any HTML tags,</li><li>like this list.</li></ul>";?>
+</main>
+<footer>
+    <p>And this code is back in plain HTML</p>
+</footer>
 </body>
 </html>
